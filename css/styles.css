@@ -13,6 +13,7 @@
   --line: #d9d6cc;
   --teal: #990000;
   --teal-dark: #6D0808;
+  --teal-darker: #440505;
   --brass: #a97e45;
   --brass-dark: #8a6636;
   --white: #ffffff;
@@ -184,6 +185,16 @@ button:focus-visible {
 .btn-primary:hover {
   background: var(--teal-dark);
   border-color: var(--teal-dark);
+}
+
+.btn-secondary { 
+  background: var(--teal-darker);
+  color: var(--white);
+  border-color: var(--teal-dark);
+}
+.btn-secondary:hover {
+  background: var(--teal);
+  border-color: var(--teal);
 }
 
 .btn-outline {
