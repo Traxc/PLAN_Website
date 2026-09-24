@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Applied Research Practicum connects Indiana communities with thoughtful, practical legal research.">
+  <title>Applied Research Practicum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Applied Research Practicum home">
+      <!-- Replace this monogram with an approved IU logo asset when available. -->
+      <span class="brand__mark" aria-hidden="true">IU</span>
+      <span class="brand__name">Applied Research<br>Practicum</span>
+    </a>
+    <a class="header-phone" href="tel:+13175550100">
+      <span>Give us a call</span>
+      <strong>(317) 555-0100</strong>
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__background" aria-hidden="true"></div>
+
+      <div class="hero__about">
+        <p class="eyebrow">Research in service of Indiana</p>
+        <h1 id="hero-title">Who we are</h1>
+        <p class="hero__lead">
+          The Applied Research Practicum brings emerging legal thinkers and experienced
+          faculty together to examine the questions that matter to our communities.
+        </p>
+        <p class="hero__copy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel sem at
+          arcu tincidunt dignissim. Curabitur vitae eros sit amet nibh consequat feugiat.
+        </p>
+        <a class="button button--light" href="#team">
+          Learn more
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero__contact" id="contact">
+        <div class="contact-card">
+          <p class="eyebrow eyebrow--crimson">Start a conversation</p>
+          <h2>Contact us</h2>
+          <p class="contact-card__intro">Tell us a little about your research question. We’ll follow up with next steps.</p>
+
+          <form class="contact-form" action="contact.php" method="post" data-contact-form>
+            <div class="form-field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+            </div>
+
+            <div class="form-field">
+              <label for="inquiry">How can we help? <span aria-hidden="true">*</span></label>
+              <textarea id="inquiry" name="inquiry" rows="4" required maxlength="3000"></textarea>
+            </div>
+
+            <div class="form-field form-field--honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="form-consent">
+              <input name="consent" type="checkbox" value="yes" required>
+              <span>I understand that submitting this form does not create an attorney-client relationship.</span>
+            </label>
+
+            <button class="button button--crimson" type="submit">
+              <span>Submit inquiry</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section" id="team" aria-labelledby="team-title">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow--crimson">People behind the work</p>
+        <h2 id="team-title">Meet the team</h2>
+        <p>Our practicum pairs rigorous research with a practical commitment to the communities we serve.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="person-card">
+          <div class="person-card__portrait" role="img" aria-label="Portrait placeholder for team member one">
+            <span>Photo</span>
+          </div>
+          <p class="person-card__role">Faculty Director</p>
+          <h3>Team Member</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed erat.</p>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__portrait" role="img" aria-label="Portrait placeholder for team member two">
+            <span>Photo</span>
+          </div>
+          <p class="person-card__role">Research Fellow</p>
+          <h3>Team Member</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed erat.</p>
+        </article>
+
+        <article class="person-card">
+          <div class="person-card__portrait" role="img" aria-label="Portrait placeholder for team member three">
+            <span>Photo</span>
+          </div>
+          <p class="person-card__role">Project Coordinator</p>
+          <h3>Team Member</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed erat.</p>
+        </article>
+      </div>
+
+      <div class="team__cta">
+        <p>Have a question for the practicum?</p>
+        <a class="button button--outline" href="#contact">Contact us</a>
+      </div>
+    </section>
+
+    <section class="mission section" aria-labelledby="mission-title">
+      <div>
+        <p class="eyebrow">Our mission</p>
+        <h2 id="mission-title">Careful research.<br>Practical impact.</h2>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum, nisl
+        vitae ullamcorper elementum, massa nulla posuere justo, quis luctus arcu sapien
+        sit amet nibh. This section is ready for the firm’s full mission statement.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="#top">
+      <span class="brand__mark" aria-hidden="true">IU</span>
+      <span class="brand__name">Applied Research<br>Practicum</span>
+    </a>
+    <p>© <span data-current-year></span> Applied Research Practicum</p>
+    <a href="mailto:arp@example.edu">arp@example.edu</a>
+  </footer>
+
+  <a class="floating-contact" href="#contact" data-floating-contact>
+    Contact us <span aria-hidden="true">↑</span>
+  </a>
+</body>
+</html>
