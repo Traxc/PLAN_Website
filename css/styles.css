@@ -6,18 +6,17 @@
 
 :root {
   /* Color tokens */
-  --ink: #6D0808;
+  --ink: #2c0a5b;
   --ink-soft: #072332;
   --paper: #F8EFE2;
   --paper-raised: #F5E3CC;
   --line: #d9d6cc;
-  --teal: #990000;
-  --teal-dark: #6D0808;
-  --teal-darker: #440505;
+  --teal: #520099;
+  --teal-dark: #30086d;
+  --teal-darker: #2b0544;
   --brass: #a97e45;
   --brass-dark: #8a6636;
   --white: #ffffff;
-  --iu-red : #6D0808
 
   /* Type */
   --font-head: 'Lora', Georgia, serif;
