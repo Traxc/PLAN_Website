@@ -6,14 +6,14 @@
 
 :root {
   /* Color tokens */
-  --ink: #251b2d;
-  --ink-soft: #514957;
+  --ink: #1c1b2d;
+  --ink-soft: #413f58;
   --paper: #fffaf3;
   --paper-raised: #f3eadf;
   --line: #d8cfc4;
-  --teal: #4b176d;
-  --teal-dark: #35104f;
-  --teal-darker: #250936;
+  --teal: #17246d;
+  --teal-dark: #2e3598;
+  --teal-darker: #091436;
   --brass: #76521f;
   --brass-dark: #5f4017;
   --white: #ffffff;
