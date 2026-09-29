@@ -12,9 +12,9 @@
   <nav class="navbar">
     <a href="index.html" class="brand">People's Legal Assistance Network </a>
 
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="mission.html">Mission</a></li>
       <li><a href="who-we-are.html" aria-current="page">Team</a></li>
@@ -22,7 +22,7 @@
     </ul>
 
     <div class="nav-actions">
-      <a href="#" data-intake-link class="btn btn-primary">Start Intake</a>
+      <a href="#" data-intake-link class="btn btn-primary">Request Legal Help</a>
     </div>
   </nav>
 </header>
@@ -34,7 +34,7 @@
     <div class="container two-col">
       <div>
         <h2>A team of attorneys and legal professionals </h2>
-        <p>This is an pilot law clinic. We are tasked by the Indiana Supreme Court to create a new legal license that lowers the barriers to legal help. Future license holders will inform, prepare, and guide Hoosiers through their legal issues at the lowest possible cost. We are holding free legal consultations to train the first generation of new legal practitioners.</p>
+        <p>This is a pilot law clinic. We are tasked by the Indiana Supreme Court to create a new legal license that lowers barriers to legal help. Future license holders will inform, prepare, and guide Hoosiers through legal issues at the lowest possible cost. We are holding free legal consultations to train the first generation of new legal practitioners.</p>
         <p>The clinic is staffed by supervising attorneys with experience in family and consumer law, alongside legal professionals who handle matters under direct supervision as part of their clinical training.</p>
       </div>
       <div class="card">
@@ -46,7 +46,7 @@
           </li>
           <li>
             <h3>Legal professionals</h3>
-            <p>A brand new profession geared towards dealing with your daily legal hassels</p>
+            <p>A new profession focused on helping with common, everyday legal challenges.</p>
           </li>
           <li>
             <h3>Community Partners </h3>
@@ -76,68 +76,80 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section team-group" aria-labelledby="legal-professionals-title">
+    <div class="container">
+      <div class="team-group-heading">
+        <p class="section-kicker">Direct client support</p>
+        <h2 id="legal-professionals-title">Legal Professionals</h2>
+      </div>
 
-    <div class="container two col">
-    <h2>Legal Professionals</h2>
+      <div class="profile-list">
+        <article class="profile-card">
+          <img src="assets/emily_profile.jpeg" alt="Emily Drummond, Allied Legal Professional" class="profile-image">
+          <div class="profile-bio">
+            <p class="profile-role">Allied Legal Professional</p>
+            <h3>Emily Drummond</h3>
+            <p class="profile-placeholder">Biography forthcoming. Add a short introduction, areas of focus, education, and connection to PLAN here.</p>
+          </div>
+        </article>
+
+        <article class="profile-card profile-card--reverse">
+          <img src="assets/eivin_profile.jpeg" alt="Eivin Sandstrom, Allied Legal Professional" class="profile-image">
+          <div class="profile-bio">
+            <p class="profile-role">Allied Legal Professional</p>
+            <h3>Eivin Sandstrom</h3>
+            <p class="profile-placeholder">Biography forthcoming. Add a short introduction, areas of focus, education, and connection to PLAN here.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="assets/tony_profile.jpeg" alt="Anthony Reyes, Allied Legal Professional" class="profile-image profile-image--anthony">
+          <div class="profile-bio">
+            <p class="profile-role">Allied Legal Professional</p>
+            <h3>Anthony Reyes</h3>
+            <p>My name is Anthony Reyes. Raised in a diverse cultural background, I realized that though we may have differences, we share our problems. This inspired me to seek a way to create an impact on these shared problems. This is why I’m eager to serve Hoosiers as an Allied Legal Professional. I'm ready to start helping you through the difficulties of divorce or consumer debt and grow the People’s Legal Assistance Network (PLAN) into something great.</p>
+            <p>Anthony Reyes graduated from the Luddy School of Informatics, Computing, and Engineering at Indiana University Bloomington. After joining a research practicum at the Indiana University Maurer School of Law, he was involved in the creation of PLAN and is now a first-generation Allied Legal Professional, giving advice in matters of divorce and consumer debt.</p>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="page-container">
-        <div class = "profile-content-wrapper">
-            <img src="assets/emily_profile.jpeg" alt="Emmily Drummond, Allied Legal Professional"  class = "profile-left">
-            <div class="card-right">
-                <p>This is where script and bio go </p>
-            </div>
-        </div>
+  <section class="section section-alt team-group" aria-labelledby="supervising-lawyers-title">
+    <div class="container">
+      <div class="team-group-heading">
+        <p class="section-kicker">Attorney oversight</p>
+        <h2 id="supervising-lawyers-title">Supervising Lawyers</h2>
+      </div>
 
-        <div class = "profile-content-wrapper">
-            <div class="card-left">
-                <p>This is where script and bio go </p>
-            </div>
-            <img src="assets/eivin_profile.jpeg" alt="Eivin Sandstorm, Allied Legal Professional"  class = "profile-right">
-        </div>
+      <div class="profile-list">
+        <article class="profile-card">
+          <img src="assets/elmer_profile.jpeg" alt="Elmer Thoreson, supervising lawyer" class="profile-image">
+          <div class="profile-bio">
+            <p class="profile-role">Supervising Lawyer</p>
+            <h3>Elmer Thoreson</h3>
+            <p>Hi, I’m Elmer Thoreson. I’m from Indiana, the region, specifically, and growing up, my family couldn’t afford a lawyer. I know a lot of Hoosier families are in that same boat today. That’s a big part of why I became a founding attorney at the People’s Legal Assistance Network (PLAN). I help people dealing with debt collection understand their options, get practical advice, and connect with other resources.</p>
+            <p>Elmer Thoreson attended Ivy Tech Community College of Indiana, Indiana University Northwest, and Indiana University Maurer School of Law. He has practiced law for the last 7 years, but returned to Bloomington to help establish PLAN. Elmer is the supervising attorney for debt collection matters. Pending Addmission to the Indiana Bar</p>
+          </div>
+        </article>
 
-
-        <div class = "profile-content-wrapper">
-            <img src="assets/tony_profile.jpeg" alt="Anthony Reyes, Allied Legal Professional  class = "profile-left">
-            <div class="card-right">
-                <p>My name is Anthony Reyes. Raised in a diverse cultural background, I realized that though we may have differences, we share our problems. This inspired me to seek a way to create an impact on these shared problems. This is why I’m eager to serve Hoosiers as an Allied Legal Professional. I'm ready to start helping you through the difficulties of divorce or consumer debt and grow the People’s Legal Assistance Network (PLAN) into something great.   </p>
-                <p>Anthony Reyes graduated from the Luddy School of Informatics, Computing, and Engineering at Indiana University Bloomington. After joining a research practicum at the Indiana University Maurer School of Law, he was involved in the creation of PLAN and is now a first-generation Allied Legal Professional, giving advice in matters of divorce and consumer debt.   </p>
-            </div>
+        <article class="profile-card profile-card--reverse">
+          <img src="assets/bella_profile.jpeg" alt="Bella Bennett, supervising lawyer" class="profile-image">
+          <div class="profile-bio">
+            <p class="profile-role">Supervising Lawyer</p>
+            <h3>Bella Bennett</h3>
+            <p class="profile-placeholder">Biography forthcoming. Add a short introduction, practice background, supervisory role, and connection to PLAN here.</p>
+          </div>
+        </article>
+      </div>
     </div>
-
-</div>
-</section>
-
-<section class="section">
-
-    <div class="container two col">
-    <h2>Supervising Lawyers</h2>
-    </div>
-
-    <div class="page-container">
-    <div class = "profile-content-wrapper">
-        <img src="assets/elmer_profile.jpeg" alt="Elmer Thoresonm, Pending Admission to Indiana Bar"  class = "profile-left">
-        <div class="card-right">
-            <p>Hi, I’m Elmer Thoreson. I’m from Indiana, the region, specifically, and growing up, my family couldn’t afford a lawyer. I know a lot of Hoosier families are in that same boat today. That’s a big part of why I became a founding attorney at the People’s Legal Assistance Network (PLAN). I help people dealing with debt collection understand their options, get practical advice, and connect with other resources. </p>
-            <p>Elmer Thoreson attended Ivy Tech Community College of Indiana, Indiana University Northwest, and Indiana University Maurer School of Law. He has practiced law for the last 7 years, but returned to Bloomington to help establish PLAN. Elmer is the supervising attorney for debt collection matters. Pending Addmission to the Indiana Bar   </p>
-        </div>
-    </div>
-    <div class = "profile-content-wrapper">
-        <div class="card-left">
-            <p>This is where script and bio go </p>
-        </div>
-        <img src="assets/bella_profile.jpeg" alt="Bella Bennet, Supervising Lawyer"  class = "profile-right">
-    </div>
-    
-</div>
-</section>
+  </section>
 
   <section class="cta-band">
     <div class="container">
       <h2>Ready to talk to someone? </h2>
       <p>Fill out intake and a coordinator will follow up within two business days.</p>
-      <a href="#" data-intake-link class="btn btn-primary">Start Intake</a>
+      <a href="#" data-intake-link class="btn btn-primary">Request Legal Help</a>
     </div>
   </section>
 
@@ -146,7 +158,7 @@
 <footer class="site-footer">
   <div class="container footer-row">
       <span>&copy; 2026 People's Legal Assistance Network</span>
-    <span><a href="mission.html">Our Mission</a> &middot; <a href="who-we-are.html">Who We Are</a> &middot; <a href="what-we-do.html">What We Do</a></span>
+    <span><a href="mission.html">Our Mission</a> &middot; <a href="who-we-are.html">Our Team</a> &middot; <a href="contact.html">Contact</a></span>
   </div>
 </footer>
 

@@ -6,15 +6,15 @@
 <title>Home | Family &amp; Consumer Law Clinic</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home-page">
 
 <header class="site-header">
   <nav class="navbar">
     <a href="index.html" class="brand">People's Legal Assistance Network </a>
 
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="mission.html">Mission</a></li>
       <li><a href="who-we-are.html">Team</a></li>
@@ -22,7 +22,7 @@
     </ul>
 
     <div class="nav-actions">
-      <a href="#" data-intake-link class="btn btn-primary">Start Intake</a>
+      <a href="#" data-intake-link class="btn btn-primary">Request Legal Help</a>
     </div>
   </nav>
 </header>
@@ -30,49 +30,59 @@
 <main>
 
   <section class="hero">
-    <div class="container">
-      <div class="hero-eyebrow">Free legal help, plain language </div>
-      <h1>Practical help for family, divorce, and debt problems. </h1>
-      <p>We represent people who can't afford a private attorney — helping them navigate divorce, consumer disputes, and debt collection with clear guidance and real advocacy. </p>
-      <div class="hero-actions">
-        <a href="#" data-intake-link class="btn btn-primary">Start Intake</a>
-        <a href="what-we-do.html" class="btn btn-primary">See what we handle</a>
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">Free legal help, in plain language</div>
+        <h1>Practical help for family, divorce, and debt problems.</h1>
+        <p>We help people who can't afford a private attorney navigate divorce, consumer disputes, and debt collection with clear guidance and real advocacy.</p>
+        <div class="hero-actions">
+          <a href="#" data-intake-link class="btn btn-primary">Request Legal Help</a>
+          <a href="#services" class="hero-text-link">See where we help <span aria-hidden="true">&darr;</span></a>
+        </div>
       </div>
+      <aside class="hero-assurance" aria-label="What to expect">
+        <p class="hero-assurance-label">What to expect</p>
+        <ul>
+          <li><strong>Free consultations</strong><span>Start by telling us about your situation.</span></li>
+          <li><strong>Plain-language guidance</strong><span>Understand your options and next steps.</span></li>
+          <li><strong>Local support</strong><span>Serving Hoosiers with family and consumer matters.</span></li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="services">
     <div class="container">
       <div class="section-head">
         <h2>Where we help </h2>
-        <p>Our attorneys and Allied Legal Proffesionals take cases in four core areas.</p>
+        <p>Our attorneys and Allied Legal Professionals take cases in four core areas.</p>
       </div>
-      <div class="grid grid-3">
-        <div class="card">
+      <div class="grid grid-2 service-grid">
+        <article class="card service-card">
           <h3>Divorce </h3>
           <p>Uncontested and contested filings, separation agreements, and support calculations.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card service-card">
           <h3>Debt Defense </h3>
           <p>Responding to collection lawsuits, negotiating settlements, and stopping wage garnishment.</p>
-        </div>
-        <div class="card">
-          <h3>Document Review and Creation </h3>
-          <p>Plain-language review of contracts, court notices, settlement offers before you sign anything and all documents needed to support you.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card service-card">
+          <h3>Legal Document Support</h3>
+          <p>Reviewing and helping prepare court forms, agreements, notices, and other documents. We explain what they mean before you sign or file them.</p>
+        </article>
+        <article class="card service-card">
           <h3>Referrals </h3>
           <p>When a case falls outside our scope, we connect clients with vetted legal aid partners.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="container">
-      <h2>Not sure where to start ?</h2>
+      <h2>Not sure where to start?</h2>
       <p>Intake takes about ten minutes. We'll follow up within two business days to let you know how we can help.</p>
-      <a href="#" data-intake-link class="btn btn-primary">Start Intake</a>
+      <a href="#" data-intake-link class="btn btn-primary">Request Legal Help</a>
     </div>
   </section>
 
@@ -81,7 +91,7 @@
 <footer class="site-footer">
   <div class="container footer-row">
      <span>&copy; 2026 People's Legal Assistance Network</span>
-    <span><a href="mission.html">Our Mission</a> &middot; <a href="who-we-are.html">Who We Are</a> &middot; <a href="what-we-do.html">What We Do</a></span>
+    <span><a href="mission.html">Our Mission</a> &middot; <a href="who-we-are.html">Our Team</a> &middot; <a href="contact.html">Contact</a></span>
   </div>
 </footer>
 

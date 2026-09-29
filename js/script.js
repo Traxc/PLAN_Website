@@ -9,6 +9,15 @@ const NETWORK_FORM_URL = "https://indiana-arp.cliogrow.com/intake/dd757ccdccc901
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".site-header");
+
+  const updateHeader = () => {
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 24);
+  };
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+
   // Wire up every intake button/link on the page
   document.querySelectorAll("[data-intake-link]").forEach((el) => {
     el.setAttribute("href", INTAKE_FORM_URL);
@@ -22,17 +31,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".nav-links");
 
   if (toggle && links) {
-    toggle.addEventListener("click", () => {
-      const isOpen = links.classList.toggle("is-open");
+    const setMenuState = (isOpen, returnFocus = false) => {
+      links.classList.toggle("is-open", isOpen);
+      document.body.classList.toggle("nav-open", isOpen);
       toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      toggle.innerHTML = isOpen ? "&times;" : "&#9776;";
+      if (returnFocus) toggle.focus();
+    };
+
+    toggle.addEventListener("click", () => {
+      setMenuState(!links.classList.contains("is-open"));
     });
 
     // Close menu when a link is tapped (mobile)
     links.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        links.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
+        setMenuState(false);
       });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && links.classList.contains("is-open")) {
+        setMenuState(false, true);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 860 && links.classList.contains("is-open")) {
+        setMenuState(false);
+      }
     });
   }
 });
