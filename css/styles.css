@@ -224,6 +224,7 @@ button:focus-visible {
   background: var(--teal);
   color: var(--white);
   border-color: var(--teal);
+  text-align: center;
 }
 
 .btn-primary:hover {

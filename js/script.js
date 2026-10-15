@@ -6,6 +6,7 @@
 //    Every "Start Intake" button on every page pulls its href from this constant.
 const INTAKE_FORM_URL = "https://indiana-arp.cliogrow.com/intake/c43cd7e539ab085034a1162c6adc421a"; 
 const NETWORK_FORM_URL = "https://indiana-arp.cliogrow.com/intake/dd757ccdccc90113b9f196272fe44f16"; 
+const SCHEDULING_URL = "https://bookings.cloud.microsoft/book/PeoplesLegalAssistanceNetwork@bookings.iu.edu/?ismsaljsauthenabled"
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.querySelectorAll("[data-network-link]").forEach((el) => {
     el.setAttribute("href", NETWORK_FORM_URL);
+  });
+  document.querySelectorAll("[data-schedule-link]").forEach((el) => {
+    el.setAttribute("href", SCHEDULING_URL);
   });
 
   // Mobile nav toggle
