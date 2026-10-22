@@ -3,10 +3,24 @@
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap');
+@import url('https://googleapis.com');
 
 :root {
   /* Color tokens */
   --ink: #1c1b2d;
+  --ink-soft: #696D7D;
+  --paper: #fffaf3;
+  --paper-raised: #f3eadf;
+  --line: #d8cfc4;
+  --teal: #0C1030;
+  --teal-dark: #5C80BC;
+  --teal-darker: #2e3598;
+  --brass: #D1AF62;
+  --brass-dark: #D1AF62;
+  --white: #ffffff;
+
+/*  OLD COLORS
+   --ink: #1c1b2d;
   --ink-soft: #413f58;
   --paper: #fffaf3;
   --paper-raised: #f3eadf;
@@ -16,11 +30,11 @@
   --teal-darker: #091436;
   --brass: #76521f;
   --brass-dark: #5f4017;
-  --white: #ffffff;
+  --white: #ffffff; */
 
   /* Type */
-  --font-head: 'Lora', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-head: 'Afacad', Georgia, serif;
+  --font-body: 'Inclusive Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Layout */
   --max-width: 1120px;
@@ -116,7 +130,7 @@ button:focus-visible {
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
-  min-height: 78px;
+  height: 150px;
 }
 
 .brand {
@@ -211,11 +225,11 @@ button:focus-visible {
   justify-content: center;
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-decoration: none;
   border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.65rem 1.3rem;
+  padding: 8px 16px;
   cursor: pointer;
   transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
@@ -428,7 +442,7 @@ button:focus-visible {
    ========================================================================== */
 
 .section {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: clamp(1rem, 6vw, 3rem) 0;
 }
 
 .section + .section {
